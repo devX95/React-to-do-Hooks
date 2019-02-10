@@ -1,32 +1,144 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  background: #171C28;
+  padding: 30px;
+  min-height: calc(100vh - 180px);
+  width: calc(100% - 60px);
+}
+
+.header {
+  background: #121621;
+  height: 120px;
+  color: white;
+  width: calc(100% - 60px);
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 30px;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.header h1, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.header h3 {
+  color: rgba(200, 200, 255, 0.8)
+}
+
+.todo-list-container {
+  padding: 24px;
+  width: 480px;
+  margin: auto;
+}
+
+.todo-list-container h3 {
+  border-bottom: 2px solid white;
+  padding: 30px 0 10px;
+  margin: 0;
+  font-size: 17px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-list-container p {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-list {
+  padding: 0;
+}
+
+.todo {
+  padding: 20px 0;
+  margin-bottom: 6px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  color: white;
+}
+
+.todo-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.todo-left h3 {
+  padding: 0 18px;
+  border: none;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.todo button {
+  background: none;
+  color: #F3F4F5;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.todo button:hover {
+  color: #5528EE;
+}
+
+.form {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  height: 44px;
+  border: none;
+  margin: 0;
+  padding: 0px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  background: white;
+  border: 2px solid #D3DDEF;
+  flex-grow: 2;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+button {
+  height: 48px;
+  min-width: 48px;
+  background: #5528EE;
+  border: none;
+  font-size: 12px;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  padding: 0 18px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:disabled {
+  background: rgba(86, 39, 238, 0.5);
+}
+
+
+
+.form button {
+  margin: 4px 0;
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: bold;
 }
